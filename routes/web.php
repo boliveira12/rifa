@@ -13,6 +13,10 @@
 
 Auth::routes(['register' => false]);
 
+Route::get('rifa', function () {
+    return view('rifa');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
